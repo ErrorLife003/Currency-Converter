@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+  <div class="container">
+    <h2>Currency Converter</h2>
+    <form>
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input type="text" value="100">
+      </div>
+
+      <div class="dropdown">
+        <div class="from">
+          <p>FROM</p>
+          <div class="select-container">
+            <img src="https://flagsapi.com/US/flat/64.png">
+            <select name="from" >
+              <option value="INR">INR</option>
+              <option value="USD" selected>USD</option>
+              <option value="KRN">KRN</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+        </div>
+        <p id="icon"><i class="bi bi-arrow-left-right"></i></p>    
+        <div class="to">
+          <p>TO</p>
+          <div class="select-container">
+            <img src="https://flagsapi.com/IN/flat/64.png">
+            <select name="to" >
+              <option value="INR" selected>INR</option>
+              <option value="USD">USD</option>
+              <option value="KRN">KRN</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="msg">1USD = 80 INR</div>
+      <button>Get Exchange Rate</button>
+    </form>
+  </div>
+  <script src="country.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
